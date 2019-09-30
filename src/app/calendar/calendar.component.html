@@ -1,0 +1,46 @@
+<div class="calendar-wrapper">
+  <div class="date-container">
+    <div class="current-day">{{ currentDay }}</div>
+    <div class="current-date">{{ currentDate }}</div>
+    <div class="current-month">{{ currentMonth }}</div>
+    <div class="current-year">{{ currentYear }}</div>
+  </div>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <div class="move-month-previous" (click)="moveBack()"><</div>
+      <div class="current-month-display">
+        {{ fullMonth }}&nbsp;{{ fullYear }}
+      </div>
+      <div class="move-month-next" (click)="moveForward()">></div>
+    </div>
+    <div>
+      <table>
+        <tr class="days-of-week">
+          <td>SU</td>
+          <td>MO</td>
+          <td>TU</td>
+          <td>WE</td>
+          <td>TH</td>
+          <td>FR</td>
+          <td>SA</td>
+        </tr>
+        <tr *ngFor="let i of rows">
+          <td
+            *ngFor="let date of i.row"
+            [ngClass]="{
+              'todays-date': date == currentDate && !moveCountTracker,
+              'selected-date': date == selectedDate
+            }"
+            (click)="dateSelected(date)"
+          >
+            {{ date }}
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <span (click)="cancelCalendar()" class="cancel">CANCEL</span>
+      <span (click)="saveCalendar()" class="save">SAVE</span>
+    </div>
+  </div>
+</div>

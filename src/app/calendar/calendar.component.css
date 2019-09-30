@@ -1,0 +1,137 @@
+.calendar-wrapper {
+  width: 450px;
+  height: 330px;
+  border: 1px solid #eff5f5;
+  border-radius: 5px;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+
+.date-container {
+  width: 200px;
+  background-color: #00b3b3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.calendar-container {
+  width: 250px;
+  border: 1px solid #eff5f5;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.current-day {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  background-color: #009999;
+}
+
+.current-date {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 70px;
+  font-family: sans-serif;
+  color: white;
+  font-style: italic;
+}
+
+.current-month {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  font-style: italic;
+}
+
+.current-year {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #e0ebeb;
+  font-style: italic;
+}
+
+.calendar-header {
+  display: flex;
+}
+.move-month-previous {
+  margin-top: 10px;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.current-month-display {
+  width: 60%;
+  margin-top: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.move-month-next {
+  width: 20%;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+table {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-family: Calibri;
+}
+
+td {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.days-of-week {
+  color: grey;
+}
+
+.cancel-or-save {
+  font-family: Calibri;
+  margin-left: 100px;
+}
+
+.cancel {
+  font-family: Calibri;
+  left: 100px;
+  top: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.save {
+  font-family: Calibri;
+  left: 140px;
+  top: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.todays-date {
+  background-color: #00b3b3;
+  border-radius: 50%;
+  color: white;
+}
+
+.selected-date {
+  background-color: yellow;
+  border-radius: 50%;
+}

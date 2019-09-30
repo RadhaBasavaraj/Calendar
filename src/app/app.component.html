@@ -1,0 +1,7 @@
+<input type="text" [value]="currentDate" (focus)="showCalendar()" />
+
+<div
+  (sendSelectedDate)="displaySelectedDate($event)"
+  *ngIf="isFocused"
+  app-calendar
+></div>
